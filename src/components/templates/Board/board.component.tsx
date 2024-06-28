@@ -1,7 +1,10 @@
-import { List } from "../../molecules/List"
+import { Container } from '../../atoms/Container'
+import { List } from '../../molecules/List'
 
 export const Board = () => {
   return (
-    <List/>
+    <Container>
+      <List />
+    </Container>
   )
 }

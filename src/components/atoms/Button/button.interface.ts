@@ -1,10 +1,10 @@
-import { DefaultTheme } from "styled-components"
+import { Colors } from '../../../types/global'
 
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary'
+  variant?: Colors
+  shape?: 'square' | 'rounded' | 'circle'
   size?: 'small' | 'medium' | 'large'
-  border?:DefaultTheme['colors']
+  border?: Colors
 }
 
-
-export type StyledButtonProps = Omit<ButtonProps,'onClick'>
+export type StyledButtonProps = Omit<ButtonProps, 'onClick'>
