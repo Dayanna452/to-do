@@ -1,7 +1,8 @@
+import { Board } from "../templates/Board/board.component"
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <Board/>
   )
 }
 
