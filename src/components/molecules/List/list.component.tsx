@@ -1,11 +1,7 @@
-import { Button } from '../../atoms/Button'
-import { Checkbox } from '../../atoms/Checkbox'
+interface ListProps {
+  children: React.ReactNode
+}
 
-export const List = () => {
-  return (
-    <>
-      <Checkbox content='nuevo item' />
-      <Button variant='secondary' shape='circle'>+</Button>
-    </>
-  )
+export const List = ({ children }: ListProps) => {
+  return <>{children}</>
 }
